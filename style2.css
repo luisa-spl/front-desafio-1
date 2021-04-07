@@ -1,0 +1,250 @@
+body{
+    background-color: #E5E5E5;
+    margin:0px;
+    display: grid;
+    color: #545454;
+    font-family: 'Open Sans', sans-serif;
+    }
+    header{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 2fr 1fr 0.3fr;
+    grid-template-areas: ". logo . div .";
+    align-items: center;
+    height: 5rem;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
+    }
+    .logo{grid-area: logo;}
+    .menu{grid-area:div;}
+    .menu{
+    display: flex;
+    justify-content: space-between;
+    }
+    .estrutura{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns:0.3fr 1.5fr 0.8fr 0.3fr;
+    grid-template-rows: 3.5rem 1fr 3.5rem;
+    grid-template-areas: ". . . ."
+                         ". esquerda direita ."
+                         ". . . .";   
+ 
+    height: min-content;
+    column-gap: 3rem;
+    }
+    .esquerda{grid-area: esquerda;}
+    .direita{grid-area: direita;}
+    .esquerda{
+    display: grid;
+    grid-template-columns:2fr;
+    grid-template-rows: 1fr 0.3fr 4rem;
+    grid-template-areas: "main"
+                         "form"
+                         "botao";
+    row-gap:4rem;
+    }
+    .main{grid-area: main;}
+    .formulario{grid-area:form;}
+    .botao{
+        grid-area:botao;
+        display:flex;
+        justify-self: flex-end;
+    }
+button{
+background: #FE0078;
+font-size: 14px;
+line-height: 19px;
+color: white;
+border: none;
+box-sizing: border-box;
+border-radius: 20px;
+height: 3.5em;
+width:9rem;
+margin: 0px;
+}
+    .main{
+        background-color: #FFFFFF;
+        display: grid;
+        grid-template-rows: 2rem 2.5rem 2.5rem 25rem 40rem 1.5rem;
+        grid-template-columns:1rem 1fr 1rem;
+        grid-template-areas: ". . ."
+                             ". h1. "
+                             ". subt. "
+                            "img img img "
+                            ". div ."
+                            ". . .";
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        height: min-content;
+        }
+        h1{grid-area:h1;}
+        .sub{grid-area:subt;}
+        .fotoMain{grid-area: img;}
+        .textoMain{grid-area:div;}
+        .fotoMain{
+        width: 100%;
+        
+        }
+    .textoMain{
+display: grid;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+color: #000000;
+text-align: left;
+align-items: center;
+align-content: center;
+}
+.listA{
+    list-style-type: disc;
+}
+.subList{
+    list-style-type: circle;
+}
+.formulario{
+    display:flex;
+    flex-direction: column;
+    height: min-content;
+}
+form{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: 
+                         "nome email"
+                         "nomeInput emailInput"
+                         "coment ."
+                         "textI textI";
+    column-gap: 3rem;
+}
+.pNome{grid-area:nome;}
+.pMail{grid-area:email;}
+.nome{grid-area:nomeInput;
+width:100%;
+border: 1px solid #EEEEEE;
+box-sizing: border-box;
+border-radius: 2px;
+}
+.mail{grid-area:emailInput;
+width: 100%;
+border: 1px solid #EEEEEE;
+box-sizing: border-box;
+border-radius: 2px;
+}
+.pComent{grid-area:coment;}
+.textInput{grid-area:textI;
+height: 14rem;
+border: 1px solid #EEEEEE;
+box-sizing: border-box;
+border-radius: 2px;}
+.textInput:hover{
+    border: 1px solid #FE0078;
+}
+    .direita{
+        background-color: #FFFFFF;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1rem 5.5rem 4.5rem 0.5fr 5.5rem 0.5fr 1.5rem;
+        grid-template-areas: "."
+                             "input"
+                             "categoria"
+                             "tabela"
+                             "publicidade"
+                             "div"
+                             ".";
+        justify-items: center;
+        align-items: center;
+        height: min-content;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        }
+        .input{grid-area:input;}
+        .categoria{grid-area:categoria;}
+        .tabela{grid-area:tabela ;}
+        .publicidade{grid-area:publicidade ;}
+        .publis{grid-area: div;}
+        .publis{
+        display:grid;
+        row-gap: 20px;
+        justify-items: center;
+        }
+        .publiA, .publiB, .publiC{
+        background-color: #EEEEEE;
+        display: flex;
+        justify-content: center;
+        align-items:  center;
+        width: 340px;
+        height: 240px;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 49px;
+        color: #545454;
+        }
+        footer{
+        background: #222222;
+        display: flex;
+        height: 4.5rem;
+        justify-content: center;
+        align-items:  center;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF;
+        }
+        h1{
+        color: black;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 33px;
+        margin: 0px;
+        }
+        h2{
+        color:black;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        border-left: 2px solid #FE0078;
+        width:22rem;
+        height: 2rem;
+        margin:0px;
+        }
+        input{
+        height: 2.5rem;
+        width:22rem;
+        border: 1px solid #EEEEEE;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding-left: 10px;
+        }
+        input:hover{
+            border: 1px solid #FE0078;
+        }
+        .sub{
+        color: #929292;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        }
+        .tabela{
+        height: 2.5rem;
+        width:22rem;
+        border-collapse: collapse;
+        }
+        td{
+        border-bottom: 2px dashed #EEEEEE;
+        height: 3rem;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #545454;
+        display: flex;
+        justify-content: space-between;
+        }
+        td:hover{
+            border-bottom: 2px dashed #FE0078;
+            color: #FE0078;
+        }
+        td>p{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
