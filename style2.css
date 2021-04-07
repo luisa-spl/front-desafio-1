@@ -20,7 +20,7 @@ body{
     display: flex;
     justify-content: space-between;
     }
-    .estrutura{
+    .estrutura2{
     display: grid;
     grid-auto-flow: column;
     grid-template-columns:0.3fr 1.5fr 0.8fr 0.3fr;
@@ -32,9 +32,8 @@ body{
     height: min-content;
     column-gap: 3rem;
     }
-    .esquerda{grid-area: esquerda;}
-    .direita{grid-area: direita;}
-    .esquerda{
+    .esquerda2{
+    grid-area: esquerda;
     display: grid;
     grid-template-columns:2fr;
     grid-template-rows: 1fr 0.3fr 4rem;
@@ -43,26 +42,8 @@ body{
                          "botao";
     row-gap:4rem;
     }
-    .main{grid-area: main;}
-    .formulario{grid-area:form;}
-    .botao{
-        grid-area:botao;
-        display:flex;
-        justify-self: flex-end;
-    }
-button{
-background: #FE0078;
-font-size: 14px;
-line-height: 19px;
-color: white;
-border: none;
-box-sizing: border-box;
-border-radius: 20px;
-height: 3.5em;
-width:9rem;
-margin: 0px;
-}
-    .main{
+    .main2{
+        grid-area: main;
         background-color: #FFFFFF;
         display: grid;
         grid-template-rows: 2rem 2.5rem 2.5rem 25rem 40rem 1.5rem;
@@ -102,6 +83,7 @@ align-content: center;
     list-style-type: circle;
 }
 .formulario{
+    grid-area:form;
     display:flex;
     flex-direction: column;
     height: min-content;
@@ -140,7 +122,26 @@ border-radius: 2px;}
 .textInput:hover{
     border: 1px solid #FE0078;
 }
-    .direita{
+.botao2{
+        grid-area:botao;
+        display:flex;
+        justify-self: flex-end;
+}
+.comentButton{
+background: #FE0078;
+font-size: 14px;
+line-height: 19px;
+color: white;
+border: none;
+box-sizing: border-box;
+border-radius: 20px;
+height: 3.5em;
+width:9rem;
+margin: 0px;
+}
+
+    .direita2{
+        grid-area:direita;
         background-color: #FFFFFF;
         display:grid;
         grid-template-columns: 1fr;

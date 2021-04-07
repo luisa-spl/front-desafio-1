@@ -71,6 +71,12 @@ grid-column-end:span 3 ;
     display:flex;
     justify-self: flex-end;
 }
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color: #545454;
+}
 .direita{
 background-color: #FFFFFF;
 display:grid;
@@ -195,3 +201,6 @@ td>p{
     margin-left: 15px;
     margin-right: 15px;
 }
+
+
+
